@@ -1,0 +1,6 @@
+echo 'Hello Drico (:'
+
+# Loading credentials
+if [ -d $HOME/development/revmobads/credentials ]; then
+  $(node $HOME/development/revmobads/credentials/index.js print)
+fi
