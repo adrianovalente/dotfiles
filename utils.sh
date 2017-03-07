@@ -16,7 +16,9 @@ function pull_simple(){
   git pull origin $BRANCH
 }
 
-
+function update_scripts(){
+  sh $HOME/.dotfiles/update-dotfiles.sh
+}
 
 alias g='git'
 alias gst='git status'
@@ -36,7 +38,7 @@ alias spa='spn; spm; spr'
 alias t='spa; tt'
 alias r='git fetch origin; git reset --hard origin/dev'
 alias ss='source ~/.bash_custom'
-alias vv='vim ~/.bash_custom'
+alias rs='update_scripts'
 alias desktop='cd ~/Desktop'
 alias downloads='cd ~/Downloads'
 alias show='g show head'

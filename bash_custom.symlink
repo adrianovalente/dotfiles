@@ -4,3 +4,7 @@ echo 'Hello Drico (:'
 if [ -d $HOME/development/revmobads/credentials ]; then
   $(node $HOME/development/revmobads/credentials/index.js print)
 fi
+
+# Utils
+source $HOME/.dotfiles/spotify.sh
+source $HOME/.dotfiles/utils.sh
