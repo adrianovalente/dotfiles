@@ -4,7 +4,6 @@ alias gap='git add -p'
 alias spn='sudo pkill node'
 alias spm='sudo pkill mongo'
 alias spr='sudo pkill redis'
-alias sp='sudo pkill'
 alias spa='spn; spm; spr'
 alias s='gst'
 
