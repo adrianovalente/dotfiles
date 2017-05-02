@@ -1,7 +1,7 @@
 echo 'Hello Drico (:'
 
 # Loading credentials
-if [ -d $HOME/development/revmobads/bashScripts]; then
+if [ -d $HOME/development/revmobads/bashScripts ]; then
   source $HOME/development/revmobads/bashScripts/shell/basic_zsh.sh
 fi
 
