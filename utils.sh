@@ -1,6 +1,6 @@
 function push_simple(){
   curDir=${PWD##*/};
-  BRANCH=$(this_branch);
+  BRANCH=$(current_branch);
   echo "Pushing $curDir to "$BRANCH;
   if [ $1 == "-f" ]; then
     git push origin $BRANCH -f
@@ -11,7 +11,7 @@ function push_simple(){
 
 function pull_simple(){
   curDir=${PWD##*/}
-  BRANCH=$(this_branch)
+  BRANCH=$(current_branch)
   echo "Pulling $curDir from "$BRANCH
   git pull origin $BRANCH
 }
