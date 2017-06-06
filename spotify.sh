@@ -6,4 +6,6 @@ function currentPlaying () {
   fi
 }
 
- PS1="\n\[\033[01;30m\]\h\[\033[38;5;85m\]\$(currentPlaying)\[\033[01;39m\] \W \[\033[31m\]\$(parse_git_branch) \[\033[01;31m\]$\[\033[00m\] "
+if [ -n "$BASH_VERSION" ]; then
+  PS1="\n\[\033[01;30m\]\h\[\033[38;5;85m\]\$(currentPlaying)\[\033[01;39m\] \W \[\033[31m\]\$(parse_git_branch) \[\033[01;31m\]$\[\033[00m\] "
+fi
