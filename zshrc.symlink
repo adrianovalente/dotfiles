@@ -95,3 +95,4 @@ source $HOME/.dotfiles/spotify.sh
 
 export PS1='%{$fg[green]%}$(currentPlaying)%{$reset_color%} %{$reset_color%}%B%c%b%{$reset_color%} $(git_prompt_info)'
 
+bindkey -v
