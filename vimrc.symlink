@@ -147,3 +147,4 @@ nnoremap <leader>; :vertical resize -2 <cr>
 nnoremap <leader>a :Gblame <cr>
 nnoremap <leader>w :InteractiveWindow <cr>
 
+set clipboard+=unnamed
