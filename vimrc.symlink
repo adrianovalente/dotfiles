@@ -148,3 +148,6 @@ nnoremap <leader>a :Gblame <cr>
 nnoremap <leader>w :InteractiveWindow <cr>
 
 set clipboard+=unnamed
+
+" Fixing NerdTree
+let g:NERDTreeNodeDelimiter = "\u00a0"
