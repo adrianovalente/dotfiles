@@ -84,11 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Revmob Shell Scripts
-if [ -d $HOME/development/revmobads/bashScripts ]; then
-  source $HOME/development/revmobads/bashScripts/shell/source-me.sh
-fi
-
 # My custom utils
 source $HOME/.dotfiles/utils.sh
 source $HOME/.dotfiles/spotify.sh
