@@ -1,7 +1,12 @@
+#!/bin/bash
+
 # Downloading .vimrc if necessary 
-if [ ! -d ~/.dotfiles  ]; then
-  echo 'dotfiles directory not found! Downloading .vimrc to '$HOME
-  curl https://raw.githubusercontent.com/adrianovalente/dotfiles/master/vimrc.symlink > ~/.vimrc
+if [ ! -d ~/dotfiles ]; then
+  echo 'dotfiles directory not found! Downloading .vimrc directly to '$HOME
+  curl https://raw.githubusercontent.com/adrianovalente/dotfiles/master/vimrc.vim > ~/.vimrc
+else
+  echo 'Linking vimrc.symlink to home...'
+  cp ~/dotfiles/vimrc.vim ~/.vimrc
 fi
 
 # Installing Pathogen
