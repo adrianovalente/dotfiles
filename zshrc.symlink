@@ -85,9 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # My custom utils
-source $HOME/.dotfiles/utils.sh
-source $HOME/.dotfiles/spotify.sh
-
-export PS1='%{$fg[green]%}$(currentPlaying)%{$reset_color%} %{$reset_color%}%B%c%b%{$reset_color%} $(git_prompt_info)'
+source $HOME/dotfiles/utils.sh
+source $HOME/dotfiles/spotify.sh
 
 bindkey -v
