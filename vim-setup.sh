@@ -16,3 +16,8 @@ git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
 git clone https://github.com/romgrk/winteract.vim.git ~/.vim/bundle/winteract
 git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic
 git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
+git clone git://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
+
+# Clojure/JVM Extensions
+git clone git://github.com/tpope/vim-classpath.git ~/.vim/bundle/vim-classpath
+git clone git://github.com/tpope/vim-fireplace.git ~/.vim/bundle/vim-fireplace

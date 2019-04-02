@@ -152,3 +152,11 @@ set clipboard+=unnamed
 
 " Fixing NerdTree
 let g:NERDTreeNodeDelimiter = "\u00a0"
+
+" This makes gitgutter updating every 250ms
+"let g:gitgutter_realtime = 1
+"set updatetime=250
+
+" This makes gitgutter update after saving file
+" https://github.com/airblade/vim-gitgutter/issues/526
+autocmd BufWritePost * GitGutter
