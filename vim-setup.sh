@@ -15,3 +15,4 @@ git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/bundle/vim-colors
 git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
 git clone https://github.com/romgrk/winteract.vim.git ~/.vim/bundle/winteract
 git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic
+git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
