@@ -8,7 +8,8 @@ ls | grep symlink | sed -e 's/.symlink//g' | xargs -I {} sh -c 'cp {}.symlink ~/
 
 if [ -d $HOME/.oh-my-zsh ]; then
   echo 'Updating oh-my-zsh custom configs...'
-  cp -R ~/dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+  rm -rf ~/.oh-my-zsh/custom
+  cp -R ~/dotfiles/oh-my-zsh/custom/ ~/.oh-my-zsh
 fi
 
 exec $SHELL
