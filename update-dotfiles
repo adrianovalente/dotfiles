@@ -12,7 +12,7 @@ echo 'Loading vim...'
 if [ -d $HOME/.oh-my-zsh ]; then
   echo 'Updating oh-my-zsh custom configs...'
   rm -rf ~/.oh-my-zsh/custom
-  cp -R ~/dotfiles/oh-my-zsh/custom/ ~/.oh-my-zsh
+  cp -R ~/dotfiles/oh-my-zsh/custom ~/.oh-my-zsh
 fi
 
 exec $SHELL
