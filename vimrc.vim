@@ -161,3 +161,8 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 " https://github.com/airblade/vim-gitgutter/issues/526
 let g:gitgutter_realtime = 0
 autocmd BufWritePost * GitGutter
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces

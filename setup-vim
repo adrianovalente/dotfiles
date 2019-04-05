@@ -35,4 +35,6 @@ install_plugin git://github.com/airblade/vim-gitgutter.git
 
 # Clojure/JVM Extensions
 install_plugin git://github.com/tpope/vim-classpath.git
+install_plugin https://github.com/guns/vim-clojure-static
+install_plugin https://github.com/kien/rainbow_parentheses.vim
 install_plugin git://github.com/tpope/vim-fireplace.git
