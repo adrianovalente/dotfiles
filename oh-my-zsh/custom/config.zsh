@@ -1,5 +1,6 @@
 ZSH_THEME="driconoster"
 
+alias please=sudo
 source $HOME/dotfiles/bash/utils
 source $HOME/dotfiles/bash/spotify
 
