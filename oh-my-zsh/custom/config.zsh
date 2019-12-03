@@ -11,3 +11,12 @@ bindkey "^R" history-incremental-search-backward
 
 # configures GPG terminal for signing commits
 export GPG_TTY=$(tty)
+
+java11(){
+  export JAVA_HOME=`/usr/libexec/java_home -v 11`
+}
+java8(){
+  export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+}
+
+java8
