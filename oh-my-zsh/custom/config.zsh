@@ -20,3 +20,5 @@ java8(){
 }
 
 java8
+alias e='/usr/local/bin/emacs'
+export LC_ALL=en_US.UTF-8
