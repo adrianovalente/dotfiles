@@ -1,8 +1,8 @@
-ZSH_THEME="driconoster"
+# ZSH_THEME="driconoster"
 
 alias please=sudo
 source $HOME/dotfiles/bash/utils
-source $HOME/dotfiles/bash/spotify
+# source $HOME/dotfiles/bash/spotify
 
 bindkey -v
 
