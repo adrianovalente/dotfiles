@@ -30,11 +30,11 @@ install_plugin https://github.com/flazz/vim-colorschemes.git
 install_plugin https://github.com/tpope/vim-fugitive.git
 install_plugin https://github.com/romgrk/winteract.vim.git
 install_plugin https://github.com/vim-syntastic/syntastic.git
-install_plugin git://github.com/altercation/vim-colors-solarized.git
+install_plugin https://github.com/altercation/vim-colors-solarized.git
 install_plugin git://github.com/airblade/vim-gitgutter.git
 
 # Clojure/JVM Extensions
-install_plugin git://github.com/tpope/vim-classpath.git
+install_plugin https://github.com/tpope/vim-classpath.git
 install_plugin https://github.com/guns/vim-clojure-static
 install_plugin https://github.com/kien/rainbow_parentheses.vim
-install_plugin git://github.com/tpope/vim-fireplace.git
+install_plugin https://github.com/tpope/vim-fireplace.git
