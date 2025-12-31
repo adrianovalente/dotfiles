@@ -159,8 +159,8 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 
 " This makes gitgutter update after saving file
 " https://github.com/airblade/vim-gitgutter/issues/526
-let g:gitgutter_realtime = 0
-autocmd BufWritePost * GitGutter
+" let g:gitgutter_realtime = 0
+" autocmd BufWritePost * GitGutter
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
