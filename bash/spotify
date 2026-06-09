@@ -1,9 +1,26 @@
 #!/bin/bash
 
-function spotify_playing () {
-  if [[ $(osascript -e 'tell application "Spotify" to player state as string' 2> /dev/null) == *"playing"* ]]; then
-    artist=`osascript -e 'tell application "Spotify" to artist of current track as string' 2> /dev/null`;
-    track=`osascript -e 'tell application "Spotify" to name of current track as string' 2> /dev/null`;
-    echo " "$track" ("$artist")"
-  fi
+function spotify_playing() {
+  [[ -n "$BYPASS_SPOTIFY_PLAYING" ]] && return
+  osascript <<'EOF' 2>/dev/null
+tell application "System Events"
+    if not (exists process "Spotify") then
+        return ""
+    end if
+
+end tell
+tell application "Spotify"
+    if player state is playing then
+        return " " & name of current track & " (" & artist of current track & ")"
+    end if
+end tell
+EOF
+}
+
+function spotify_prompt_off() {
+  export BYPASS_SPOTIFY_PLAYING=1
+}
+
+function spotify_prompt_on() {
+  unset BYPASS_SPOTIFY_PLAYING
 }
