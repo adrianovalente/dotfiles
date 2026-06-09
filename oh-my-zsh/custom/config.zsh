@@ -19,3 +19,5 @@ java8(){
 
 alias e='/usr/local/bin/emacs'
 export LC_ALL=en_US.UTF-8
+
+export PS1='%F{green}$(spotify_playing)%f %(?:%{%}%1{➜%} :%{%}%1{➜%} ) %{%}%c%{%} $(git_prompt_info)'
